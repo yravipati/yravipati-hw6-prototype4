@@ -189,12 +189,13 @@ function PersonalInfo({ formData, updateFormData }) {
               },
             }}
           >
-          {classYears.map((year) => (
-            <MenuItem key={year} value={year}>
-              {year}
-            </MenuItem>
-          ))}
-        </TextField>
+            {classYears.map((year) => (
+              <MenuItem key={year} value={year}>
+                {year}
+              </MenuItem>
+            ))}
+          </TextField>
+        </Box>
 
         <Typography variant="caption" sx={{ color: 'rgba(255, 255, 255, 0.8)', mt: -1 }}>
           * All fields with asterisk are required
