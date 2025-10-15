@@ -1,0 +1,60 @@
+.confirmation-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Animated background orbs */
+.confirmation-container::before,
+.confirmation-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: float 8s ease-in-out infinite;
+}
+
+.confirmation-container::before {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #4ade80, #22c55e);
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.confirmation-container::after {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #8b5cf6, #6366f1);
+  bottom: -100px;
+  left: -100px;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-30px) scale(1.1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
