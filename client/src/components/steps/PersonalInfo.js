@@ -38,26 +38,41 @@ function PersonalInfo({ formData, updateFormData }) {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <EmailIcon sx={{ color: 'rgba(255, 255, 255, 0.7)' }} />
+                <EmailIcon sx={{ color: 'rgba(102, 126, 234, 0.7)' }} />
               </InputAdornment>
             ),
           }}
+          InputLabelProps={{
+            shrink: true,
+          }}
           sx={{
             '& .MuiOutlinedInput-root': {
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: 'rgba(255, 255, 255, 0.95)',
               borderRadius: '12px',
               '& fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.3)',
+                borderColor: 'rgba(255, 255, 255, 0.4)',
               },
               '&:hover fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.5)',
+                borderColor: 'rgba(102, 126, 234, 0.5)',
               },
               '&.Mui-focused fieldset': {
                 borderColor: '#667eea',
+                borderWidth: '2px',
               },
             },
             '& .MuiInputLabel-root': {
-              color: 'rgba(0, 0, 0, 0.6)',
+              color: 'rgba(255, 255, 255, 0.9)',
+              fontWeight: 500,
+              '&.Mui-focused': {
+                color: 'white',
+              },
+            },
+            '& .MuiInputBase-input': {
+              color: 'rgba(0, 0, 0, 0.87)',
+              '&::placeholder': {
+                color: 'rgba(0, 0, 0, 0.4)',
+                opacity: 1,
+              },
             },
           }}
         />
@@ -73,26 +88,41 @@ function PersonalInfo({ formData, updateFormData }) {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <PersonIcon sx={{ color: 'rgba(255, 255, 255, 0.7)' }} />
+                  <PersonIcon sx={{ color: 'rgba(102, 126, 234, 0.7)' }} />
                 </InputAdornment>
               ),
             }}
+            InputLabelProps={{
+              shrink: true,
+            }}
             sx={{
               '& .MuiOutlinedInput-root': {
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                backgroundColor: 'rgba(255, 255, 255, 0.95)',
                 borderRadius: '12px',
                 '& fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.3)',
+                  borderColor: 'rgba(255, 255, 255, 0.4)',
                 },
                 '&:hover fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.5)',
+                  borderColor: 'rgba(102, 126, 234, 0.5)',
                 },
                 '&.Mui-focused fieldset': {
                   borderColor: '#667eea',
+                  borderWidth: '2px',
                 },
               },
               '& .MuiInputLabel-root': {
-                color: 'rgba(0, 0, 0, 0.6)',
+                color: 'rgba(255, 255, 255, 0.9)',
+                fontWeight: 500,
+                '&.Mui-focused': {
+                  color: 'white',
+                },
+              },
+              '& .MuiInputBase-input': {
+                color: 'rgba(0, 0, 0, 0.87)',
+                '&::placeholder': {
+                  color: 'rgba(0, 0, 0, 0.4)',
+                  opacity: 1,
+                },
               },
             }}
           />
@@ -103,22 +133,37 @@ function PersonalInfo({ formData, updateFormData }) {
             value={formData.lastName}
             onChange={(e) => updateFormData({ lastName: e.target.value })}
             placeholder="Doe"
+            InputLabelProps={{
+              shrink: true,
+            }}
             sx={{
               '& .MuiOutlinedInput-root': {
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                backgroundColor: 'rgba(255, 255, 255, 0.95)',
                 borderRadius: '12px',
                 '& fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.3)',
+                  borderColor: 'rgba(255, 255, 255, 0.4)',
                 },
                 '&:hover fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.5)',
+                  borderColor: 'rgba(102, 126, 234, 0.5)',
                 },
                 '&.Mui-focused fieldset': {
                   borderColor: '#667eea',
+                  borderWidth: '2px',
                 },
               },
               '& .MuiInputLabel-root': {
-                color: 'rgba(0, 0, 0, 0.6)',
+                color: 'rgba(255, 255, 255, 0.9)',
+                fontWeight: 500,
+                '&.Mui-focused': {
+                  color: 'white',
+                },
+              },
+              '& .MuiInputBase-input': {
+                color: 'rgba(0, 0, 0, 0.87)',
+                '&::placeholder': {
+                  color: 'rgba(0, 0, 0, 0.4)',
+                  opacity: 1,
+                },
               },
             }}
           />
@@ -134,26 +179,37 @@ function PersonalInfo({ formData, updateFormData }) {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <SchoolIcon sx={{ color: 'rgba(255, 255, 255, 0.7)' }} />
+                <SchoolIcon sx={{ color: 'rgba(102, 126, 234, 0.7)' }} />
               </InputAdornment>
             ),
           }}
+          InputLabelProps={{
+            shrink: true,
+          }}
           sx={{
             '& .MuiOutlinedInput-root': {
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: 'rgba(255, 255, 255, 0.95)',
               borderRadius: '12px',
               '& fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.3)',
+                borderColor: 'rgba(255, 255, 255, 0.4)',
               },
               '&:hover fieldset': {
-                borderColor: 'rgba(255, 255, 255, 0.5)',
+                borderColor: 'rgba(102, 126, 234, 0.5)',
               },
               '&.Mui-focused fieldset': {
                 borderColor: '#667eea',
+                borderWidth: '2px',
               },
             },
             '& .MuiInputLabel-root': {
-              color: 'rgba(0, 0, 0, 0.6)',
+              color: 'rgba(255, 255, 255, 0.9)',
+              fontWeight: 500,
+              '&.Mui-focused': {
+                color: 'white',
+              },
+            },
+            '& .MuiSelect-select': {
+              color: 'rgba(0, 0, 0, 0.87)',
             },
           }}
         >
