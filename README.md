@@ -299,6 +299,33 @@ GET /api/user/profiles
 - **Material UI**: Buttons, TextFields, Chips, Steppers
 - **Animations**: Floating orbs, scale transitions, slide effects
 
+## 🚀 Deployment
+
+This project is ready for production deployment!
+
+### Deploy to Vercel (Recommended)
+
+```bash
+# Quick deploy
+vercel --prod
+```
+
+### Deploy to GitHub + Vercel
+
+```bash
+# Push to GitHub
+git remote add origin https://github.com/YOUR_USERNAME/eventus-onboarding.git
+git push -u origin main
+
+# Then import to Vercel from GitHub
+# See: https://vercel.com/new
+```
+
+**📚 Detailed guides:**
+- [README_DEPLOYMENT.md](README_DEPLOYMENT.md) - Quick deployment
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Complete guide
+- [GITHUB_SETUP.md](GITHUB_SETUP.md) - GitHub setup
+
 ## 🚧 Out of Scope (Future Enhancements)
 
 - Resume upload functionality
