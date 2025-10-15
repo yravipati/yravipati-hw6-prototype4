@@ -7,7 +7,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "vercel-build": "cd client && npm install && npm run build"
   },
   "keywords": ["onboarding", "survey", "prototype"],
   "author": "",
@@ -16,4 +17,3 @@
     "concurrently": "^8.2.0"
   }
 }
-
