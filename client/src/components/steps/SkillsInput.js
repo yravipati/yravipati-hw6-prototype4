@@ -98,14 +98,21 @@ function SkillsInput({ formData, updateFormData }) {
           <ToggleButton
             value="technical"
             sx={{
-              color: 'white',
-              borderColor: 'rgba(255, 255, 255, 0.3)',
+              color: 'rgba(0, 0, 0, 0.87)',
+              backgroundColor: 'rgba(255, 255, 255, 0.7)',
+              borderColor: 'rgba(255, 255, 255, 0.5)',
+              fontWeight: 500,
               '&.Mui-selected': {
-                backgroundColor: 'rgba(102, 126, 234, 0.7)',
+                backgroundColor: 'rgba(102, 126, 234, 0.9)',
                 color: 'white',
+                borderColor: 'white',
+                fontWeight: 600,
                 '&:hover': {
-                  backgroundColor: 'rgba(102, 126, 234, 0.8)',
+                  backgroundColor: 'rgba(102, 126, 234, 1)',
                 },
+              },
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
               },
             }}
           >
@@ -114,14 +121,21 @@ function SkillsInput({ formData, updateFormData }) {
           <ToggleButton
             value="soft"
             sx={{
-              color: 'white',
-              borderColor: 'rgba(255, 255, 255, 0.3)',
+              color: 'rgba(0, 0, 0, 0.87)',
+              backgroundColor: 'rgba(255, 255, 255, 0.7)',
+              borderColor: 'rgba(255, 255, 255, 0.5)',
+              fontWeight: 500,
               '&.Mui-selected': {
-                backgroundColor: 'rgba(102, 126, 234, 0.7)',
+                backgroundColor: 'rgba(102, 126, 234, 0.9)',
                 color: 'white',
+                borderColor: 'white',
+                fontWeight: 600,
                 '&:hover': {
-                  backgroundColor: 'rgba(102, 126, 234, 0.8)',
+                  backgroundColor: 'rgba(102, 126, 234, 1)',
                 },
+              },
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
               },
             }}
           >
@@ -139,16 +153,24 @@ function SkillsInput({ formData, updateFormData }) {
             onKeyPress={handleKeyPress}
             sx={{
               '& .MuiOutlinedInput-root': {
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                backgroundColor: 'rgba(255, 255, 255, 0.95)',
                 borderRadius: '12px',
                 '& fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.3)',
+                  borderColor: 'rgba(255, 255, 255, 0.5)',
                 },
                 '&:hover fieldset': {
-                  borderColor: 'rgba(255, 255, 255, 0.5)',
+                  borderColor: 'rgba(102, 126, 234, 0.5)',
                 },
                 '&.Mui-focused fieldset': {
                   borderColor: '#667eea',
+                  borderWidth: '2px',
+                },
+              },
+              '& .MuiInputBase-input': {
+                color: 'rgba(0, 0, 0, 0.87)',
+                '&::placeholder': {
+                  color: 'rgba(0, 0, 0, 0.5)',
+                  opacity: 1,
                 },
               },
             }}
