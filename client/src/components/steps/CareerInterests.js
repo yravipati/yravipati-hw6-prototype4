@@ -68,16 +68,18 @@ function CareerInterests({ formData, updateFormData }) {
                     sx={{
                       backgroundColor: isSelected
                         ? 'rgba(102, 126, 234, 0.9)'
-                        : 'rgba(255, 255, 255, 0.3)',
-                      color: 'white',
-                      fontWeight: isSelected ? 600 : 400,
-                      border: isSelected ? '2px solid white' : '1px solid rgba(255, 255, 255, 0.3)',
+                        : 'rgba(255, 255, 255, 0.9)',
+                      color: isSelected ? 'white' : 'rgba(0, 0, 0, 0.87)',
+                      fontWeight: isSelected ? 600 : 500,
+                      border: isSelected ? '2px solid white' : '1px solid rgba(255, 255, 255, 0.5)',
                       '&:hover': {
                         backgroundColor: isSelected
                           ? 'rgba(102, 126, 234, 1)'
-                          : 'rgba(255, 255, 255, 0.4)',
+                          : 'rgba(255, 255, 255, 1)',
+                        transform: 'translateY(-2px)',
                       },
                       transition: 'all 0.3s ease',
+                      cursor: 'pointer',
                     }}
                   />
                 );

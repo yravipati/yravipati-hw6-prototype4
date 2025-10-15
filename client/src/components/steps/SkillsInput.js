@@ -184,13 +184,14 @@ function SkillsInput({ formData, updateFormData }) {
                 disabled={isAdded}
                 sx={{
                   backgroundColor: isAdded
-                    ? 'rgba(200, 200, 200, 0.3)'
-                    : 'rgba(255, 255, 255, 0.3)',
-                  color: 'white',
+                    ? 'rgba(200, 200, 200, 0.5)'
+                    : 'rgba(255, 255, 255, 0.9)',
+                  color: isAdded ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.87)',
+                  fontWeight: isAdded ? 400 : 500,
                   '&:hover': {
                     backgroundColor: isAdded
-                      ? 'rgba(200, 200, 200, 0.3)'
-                      : 'rgba(255, 255, 255, 0.5)',
+                      ? 'rgba(200, 200, 200, 0.5)'
+                      : 'rgba(255, 255, 255, 1)',
                   },
                   cursor: isAdded ? 'default' : 'pointer',
                 }}
@@ -216,13 +217,14 @@ function SkillsInput({ formData, updateFormData }) {
                 disabled={isAdded}
                 sx={{
                   backgroundColor: isAdded
-                    ? 'rgba(200, 200, 200, 0.3)'
-                    : 'rgba(255, 255, 255, 0.3)',
-                  color: 'white',
+                    ? 'rgba(200, 200, 200, 0.5)'
+                    : 'rgba(255, 255, 255, 0.9)',
+                  color: isAdded ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.87)',
+                  fontWeight: isAdded ? 400 : 500,
                   '&:hover': {
                     backgroundColor: isAdded
-                      ? 'rgba(200, 200, 200, 0.3)'
-                      : 'rgba(255, 255, 255, 0.5)',
+                      ? 'rgba(200, 200, 200, 0.5)'
+                      : 'rgba(255, 255, 255, 1)',
                   },
                   cursor: isAdded ? 'default' : 'pointer',
                 }}
